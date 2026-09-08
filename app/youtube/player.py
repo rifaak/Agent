@@ -48,4 +48,10 @@ for pattern in patterns:
     pattern,
     text
   )
+  if match:
+    query = match.group(1)
+    break
 
+query = query.string()
+
+video
