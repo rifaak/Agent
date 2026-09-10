@@ -28,6 +28,37 @@ Rules:
 Output exactly:
 
 SUBJECT: <subject>
+BODY:
+<email body>
+
+User command:
+{command}
+"""
+
+   url = (
+       f"https://generativelanguage.googleapis.com/"
+       f"vibeta/model/{MODEL}:generate content"
+   )
+
+    playload = {
+        "constants": [{"parts":[{"text": prompt}]}],
+        "generatingConfig":{
+            "temperature": 0.7,
+            "maxOutputTokens": 800
+        }
+    }
+
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode(),
+        headers=(
+            "Content-Type": "application/json",
+            "x-goog-api-key": API_KEY
+        },
+        method="POST"
+        )
+
+        
 
 
 
