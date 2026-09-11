@@ -1,32 +1,32 @@
 1. Agent Product for youtube & gmail :
 2. app -> __init__.py
 2.1. functions:
-   def create_app()
-   def home()
-   def html()
-   def health()
-   def agent()
-   Flask(__name__)
-   CORS(app)
-   app.register_blueprint()
-   app.route()
-   render_template()
-   request.get_json()
-   jsonify()
-   str.strip()	
-   dict.get()	
-   str()
-   Exception
-3. app -> requirements.txt
+   2.1.1.   def create_app()
+   2.1.2. def home()
+   2.1.3.def html()
+   2.1.4. def health()
+   2.1.5.def agent()
+   2.1.6.Flask(__name__)
+   2.1.7. CORS(app)
+   2.1.8.app.register_blueprint()
+   2.1.9. app.route()
+   2.1.10. render_template()
+   2.1.11.request.get_json()
+   2.1.12.jsonify()
+   2.1.13.str.strip()	
+   2.1.14.dict.get()	
+   2.1.15.str()
+   2.1.16.Exception
+4. app -> requirements.txt
 3.1. packages:
    Flask 3.1.1	
    Gunicorn 21.0.0	
    Flask-CORS
-4. app -> wsgi.py
+5. app -> wsgi.py
 4.1. functions:
    create_app()
-5. app -> templates
-6. app -> templates -> index.html
+6. app -> templates
+7. app -> templates -> index.html
 6.1. functions:
    $(id)	
    isGmail(command)	
@@ -44,8 +44,8 @@
    JSON.stringify()	
    Error()	
    console.error()
-7. app -> youtube
-8. app -> youtube -> __init__.py
+8. app -> youtube
+9. app -> youtube -> __init__.py
 8.1. functions:
    create_youtube_url(command)
    play()
@@ -55,7 +55,7 @@
    data.get()
    strip()
    jsonify()
-9. app -> youtube -> player.py
+10. app -> youtube -> player.py
 9.1. functions:
    get_vid(query)
    create_youtube_url(command)
@@ -71,14 +71,14 @@
    .group()	
    Exception	
    print
-10. app -> gmail
-11. app -> gmail -> __init__.py
+11. app -> gmail
+12. app -> gmail -> __init__.py
 11.1. functions imported:
    is_email_command()
    extract_email()
    generate_email_with_gemini()
    create_gmail_url()
-12. app -> gmail -> gmail_gen.py
+13. app -> gmail -> gmail_gen.py
 12.1. functions:
    generate_email_with_gemini(command)
    os.getenv()	
@@ -98,7 +98,7 @@
    random.random()	
    RuntimeError()	
    Exception
-13. app -> gmail -> gmail_write.py
+14. app -> gmail -> gmail_write.py
 13.1. functions:
    is_email_command(text)	
    extract_email(text)	
